@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./signup.css" rel="stylesheet">
+    <script src="./register1.js"></script>
+</head>
+<body id="rbody" style="height: 720px;">
+
+    <!-- Form Details -->
+<div id="form" class="content">
+    <h1 id="rh1">Registration Form</h1>
+    <form action="" class="formclass" name="theform" onsubmit="event.preventDefault();onFormSubmit()"  id="formId">
+        <input id="num" placeholder="" required onkeyup="fill()" type="number"><br><br>
+        <label id="label1" for="num">Sno <br></label>
+        <span id="serError"> </span>
+    
+        <input id="fn" type="text" placeholder="" required maxlength="10" minlength="2" pattern="^[A-Za-z ]*$"  title="You Can Enter Max 10 Character's" onkeyup="fill()"><br><br>
+        <label for="fn" id="lable2" type="text">First Name <br></label>
+        <error id="fnalert"></error>
+    
+        <input id="ln" type="text" placeholder="" required maxlength="10" minlength="2" pattern="^[A-Za-z ]*$" title="You Can Enter Max 10 Character's" onkeyup="fill()" ><br><br>
+        <label for="ln" id="lable3">Last Name <br></label>
+        
+        <input id="field" type="text" placeholder="" required minlength="2" pattern="^[A-Za-z ]*$" title="You Can Enter Max 10 Character's" onkeyup="fill()"> <br><br>
+        <label for="field" id="lable7">Field<br></label>
+        <input id="em"type="email" placeholder="" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" onkeyup="fill()"> <br> <br>
+        <label for="em" id="lable4">Email <br></label>
+    
+        <input id="pass"type="password" placeholder="" required onkeyup="fill()"> <br><br>
+        <label for="pass" id="lable5">Password <br></label>
+    
+        <input id="conf" type="password" placeholder="" required onkeyup="fill();validatePassword()" > <br><br>
+        <label for="conf" id="lable6"> Conform Password <br></label>
+        <error id="alert"></error>
+    <br><br>
+    <p id="rpara">Already Have Account Login Here <a href="./login.html">Login</a></p>
+    <button id="but1" onclick="main()" disabled="disabled">Register&Submit</button>
+    <button id="but2" onclick="resetForm()"> Cancel</button>
+    </form>
+</div>
+
+
+
+<!-- Table Details -->
+<div id="table" >
+    <h1 id="tableh1">Registration Data</h1>
+    <p id="tpara">THANK YOU for Sign-Up You'r Data Is Here!</p>
+    <!-- <input type="search" name="sea" placeholder="Search" id="search" onkeyup="searchfun()"><br><br><br> -->
+    <center>
+    <table id="infor" class="list">
+        <thead>
+            <tr>
+            <th id>S.No</th>
+            <th>FName</th>
+            <th>LName</th>
+            <th>You'r Field</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>confirm password</th>
+            <th id="up" colspan="2">Action's</th>
+            <th id="del"></th>
+
+        </thead>
+        </tr>
+        <tbody>
+
+        </tbody>
+    </table></center>
+    <br><br>
+    <a href="./index.html" id="tagain">Register Again</a>
+    <a href="./login.html" id="getdata">Get Data</a> 
+    <!-- <button>Update</button>
+    <button>Delete</button> -->
+</div>
+</body>
+</html>

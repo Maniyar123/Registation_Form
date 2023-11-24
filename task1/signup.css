@@ -1,0 +1,243 @@
+/* rbody */
+#rbody{
+    background: linear-gradient(135deg, rgb(197, 153, 72) 60%, cyan);
+    background-repeat: no-repeat;
+    /* background-size: 100px 100px; */
+    margin: none;
+    
+    
+}
+/* r h1 tag */
+#rh1,#tableh1{
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+/* r form div */
+#form{
+ height: 600px;
+ width: 30%;
+ background-color: rgba(51, 246, 227, 0.216);
+ position: relative;
+ left:500px;
+ top: 50px;
+ border-radius: 20px;
+box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.678), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*r input's */
+#fn,#ln,#em,#pass,#conf,#num,#field{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 350px;
+    background: transparent;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+/* r lable's */
+#label1,#lable2,#lable3,#lable4,#lable5,#lable6,#lable7{
+    position:relative;
+    bottom:30px;
+    left: 30px;
+    transition: 0.2s;
+}
+/* r para */
+#para{
+    position: relative;
+    left: 30px;
+    bottom: 70px;
+}
+
+/* r form buttons */
+#but1{
+    position: relative;
+    left: 25px;
+    background-color:transparent;
+    border: transparent;
+    font-size: larger;
+    bottom: 40px;
+}
+#but2{
+    position: relative;
+    left: 50px;
+    background-color:transparent;
+    border: transparent;
+    font-size: larger;
+    bottom: 40px;
+}
+/* register para */
+#rpara{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+#alert{
+    position: relative;
+    bottom: 15px;
+    left:30px;
+}
+
+/* form alerts */
+#fnalert{
+    position: relative;
+    right: 40px;
+    bottom: 9px;
+}
+
+/* s.no input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* register input's animations */
+#num:focus~#label1,#fn:focus~#lable2,#ln:focus~#lable3,#em:focus~#lable4,#pass:focus~#lable5,#conf:focus~#lable6,#field:focus~#lable7,
+#num:valid~#label1,#fn:valid~#lable2,#ln:valid~#lable3,#em:valid~#lable4,#pass:valid~#lable5,#conf:valid~#lable6,#field:valid~#lable7{
+top:-60px;
+/* transform: translateX(-20px); */
+    
+}
+/* password msg */
+#msg{
+    position: relative;
+    left: 30px;
+    bottom:30px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+
+ /* ---------------- login page -------------------- */
+/* login body */
+#lbody{
+    background: linear-gradient(135deg, orange 60%, cyan);
+    background-repeat: no-repeat;
+    margin: none;
+}
+/* login div form */
+#lform{
+    height: 400px;
+ width: 30%;
+ background-color: rgba(51, 246, 227, 0.216);
+ position: relative;
+ left:500px;
+ top: 130px;
+ border-radius: 20px;
+box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.678), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+/* login heading */
+#loginh1{
+    text-align: center;
+    position: relative;
+    top: 55px;
+}
+/* login input's */
+#email,#password{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 350px;
+    background: transparent;
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 80px;
+}
+
+/* login input animation */
+#email:focus~#elab1,
+#email:valid~#elab1{
+    top:-20px
+}
+#password:focus~#plab2,
+#password:valid~#plab2{
+top: -1px;
+}
+
+
+/* login lable's */
+
+#elab1,#plab2{
+    position:relative;
+    top: 30px;
+    left: 30px;
+    transition: 0.4s;
+}
+#lbut1{
+    position: relative;
+    left: 30px;
+    top: 100px;
+    background-color:transparent;
+    border: transparent;
+    font-size: larger;
+
+}
+#lbut2{
+    position: relative;
+    left: 30px;
+    top: 100px;
+    background-color:transparent;
+    border: transparent;
+    font-size: larger;
+}
+#lpara{
+    position: relative;
+    top: 80px;
+    left: 30px;
+}
+#serError{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+
+
+/* table div */
+ #table{
+    height: 300px;
+    width: 50%;
+    background-color: rgba(255, 127, 80, 0.081);
+    border: 1px solid wheat;
+    position: relative;
+    left: 600px;
+    bottom: 610px;
+    display: none;
+}
+#infor{
+     /* border: solid white 2px;  */
+     position: relative;
+    left: 20px;
+     
+     
+    border-collapse: collapse;
+    text-align: center;
+}
+tr {
+    border-bottom: 1px solid #ddd;
+  }
+/* } th{
+    border: solid white 2px;
+    border-collapse: collapse;
+    text-align:center;
+} */
+#tpara{
+    text-align: center;
+    color: antiquewhite;
+}
+#tagain{
+    color: wheat;
+    position: relative;
+    left: 90px;
+
+}
+#getdata{
+    color: wheat;
+    position: relative;
+    left: 130px;
+    
+}
